@@ -15,7 +15,7 @@ With TaskManager CLI, you can add, view, and delete tasks right from your termin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/taskmanager-cli.git
+   git clone https://github.com/codymathews1995/taskmanager-cli.git
 
 ## To-Do
 [] Initiate project
