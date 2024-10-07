@@ -18,9 +18,14 @@ With TaskManager CLI, you can add, view, and delete tasks right from your termin
    git clone https://github.com/codymathews1995/taskmanager-cli.git
 
 ## To-Do
-[] Initiate project
-[] Persistent storage options
-[] Task addition/removal/viewing
+[x] Initiate project
+
+[x] Persistent storage options
+
+[x] Task addition/removal/viewing
+
 [] Mark as complete
+
 [] Due dates
-[] Reminders 
+
+[] Reminders
