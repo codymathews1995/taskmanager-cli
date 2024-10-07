@@ -5,7 +5,7 @@ class Task:
     def __init__(self, title, description, completed = False):
         self.title = title
         self.description = description
-        self.completed = False # By default, tasks will be marked as incomplete
+        self.completed = False # By default, tasks will be marked as incomplete (✗)
     
     def __str__(self):
         status = "✓" if self.completed else "✗"
@@ -30,14 +30,14 @@ class Task:
 class TaskManager:
     def __init__(self, storage_file='tasks.json'):
         self.storage_file = storage_file
-        self.tasks = self.load_tasks()  # Ensure this returns an empty list if no file exists
+        self.tasks = self.load_tasks() 
     
     def load_tasks(self):
         if os.path.exists(self.storage_file):
             with open(self.storage_file, 'r') as file:
                 tasks_data = json.load(file)
-                return [Task(**task) for task in tasks_data]  # Convert JSON data to Task objects
-        return []  # Return an empty list if the file does not exist
+                return [Task(**task) for task in tasks_data] 
+        return [] 
     
     def save_tasks(self):
         with open(self.storage_file, 'w') as file:
@@ -46,10 +46,10 @@ class TaskManager:
     def create_task(self):
         title = input("What is the name of the task?: ")
         description = input("Would you like to put in a description of the task? [Enter to cancel]: ")
-        if title:  # Ensure title is not empty
+        if title:
             new_task = Task(title, description)
-            self.tasks.append(new_task)  # This should work now
-            self.save_tasks()  # Save tasks after adding a new one
+            self.tasks.append(new_task)
+            self.save_tasks()
 
     def list_tasks(self):
         if not self.tasks:
