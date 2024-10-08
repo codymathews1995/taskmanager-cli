@@ -16,6 +16,23 @@ With TaskManager CLI, you can add, view, and delete tasks right from your termin
 1. Clone the repository:
    ```bash
    git clone https://github.com/codymathews1995/taskmanager-cli.git
+   ```
+2. For Python
+Ensure you have Python installed on your device.
+   ```bash
+   cd Python
+   ```
+   ```bash
+   python tmcli.py
+   ```
+3. For Rust
+Ensure you have the latest Rust version installed on your device.
+   ```bash
+   cd Rust
+   ```
+   ```bash
+   cargo run
+   ```
 
 ## To-Do
 [x] Initiate project
