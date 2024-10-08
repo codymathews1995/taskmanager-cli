@@ -3,6 +3,10 @@
 A simple command-line interface (CLI) tool for managing your tasks efficiently.
 With TaskManager CLI, you can add, view, and delete tasks right from your terminal!
 
+**⚠ WARNING:** This is a work in progress and is in no way finished or near its completion. 
+
+Looking for any collaborators!
+
 ## Features
 
 - **Add Tasks**: Quickly add new tasks to your task list.
